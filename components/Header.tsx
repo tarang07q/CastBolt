@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { ICONS } from '@/constants';
+import DropdownList from './DropdownList';
 
 const Header = ({subHeader, title, userImg} : SharedHeaderProps) => {
   return (
@@ -9,7 +10,7 @@ const Header = ({subHeader, title, userImg} : SharedHeaderProps) => {
         <section className='header-container'>
             <div className='details'>
                 {userImg && (
-                    <Image src= {userImg || '/assets/images/dummy.jpg'} alt = "user" width = {66} height = {66} className='rounded-full' />
+                    <Image src= {userImg } alt = "user" width = {66} height = {66} className='rounded-full' />
                 )}  
                 <article>
                     <p>{subHeader}</p>
@@ -36,7 +37,7 @@ const Header = ({subHeader, title, userImg} : SharedHeaderProps) => {
                     <Image src = '/assets/icons/search.svg' alt = 'search' width = {16} height = {16} />    
                 </div>
 
-        {`<DropDownList />`}
+                <DropdownList />
         </section>
     </header>
   )  

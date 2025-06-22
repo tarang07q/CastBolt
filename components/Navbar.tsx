@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
-  const router = useRouter(); // ✅ moved inside
+  const router = useRouter(); 
 
   const user = true; // example user condition
 

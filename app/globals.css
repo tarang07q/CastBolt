@@ -633,6 +633,17 @@
         }
       }
     }
+    .big-highlight {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+.big-highlight .brand {
+  color: #0070f3; /* or your brand color */
+  font-weight: bold;
+  font-size: 1.3em;
+}
 
     .cta {
       @apply flex gap-4 items-center;
