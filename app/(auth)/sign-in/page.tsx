@@ -1,8 +1,15 @@
+"use client";
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import { authClient } from '@/lib/auth-client';
 
 const page = () => {
+  const handleSignIn = async () => {
+    return await authClient.signIn.social({
+      provider: "google",
+    });
+  }
   return (
     <main className='sign-in'>
       <aside className='testimonial'>
@@ -43,7 +50,7 @@ const page = () => {
       <span className="brand">Sign in</span> and share your first CastBolt video in minutes.<br />
       <span className="create-upload-inspire">Create&nbsp; Upload &nbsp;Inspire</span>
 </p>
-<button>
+<button onClick={handleSignIn}>
     <Image src= "/assets/icons/google.svg" alt = "Google" width = {30} height = {30} />
     <span>Sign in with Google</span>
       </button>

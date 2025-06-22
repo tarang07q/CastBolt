@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Tarang-Bhargava-s-workspace-co3qer.ap-southeast-2.xata.sh/db/trng_castbolt",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
