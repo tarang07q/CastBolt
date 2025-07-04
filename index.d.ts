@@ -74,7 +74,7 @@ declare interface VideoCardProps {
   title: string;
   thumbnail: string;
   userImg: string;
-  username: string;
+  userName: string;
   createdAt: Date;
   views: number;
   visibility: Visibility;
@@ -85,7 +85,7 @@ declare interface VideoDetailHeaderProps {
   title: string;
   createdAt: Date;
   userImg: string | null | undefined;
-  username?: string;
+  userName?: string;
   videoId: string;
   ownerId: string;
   visibility: string;
